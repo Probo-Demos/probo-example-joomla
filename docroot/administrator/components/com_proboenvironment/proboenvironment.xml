@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade">
+    <name>Probo Environment</name>
+    <author>Michael Bagnall</author>
+    <authorEmail>michael@bagnall.io</authorEmail>
+    <creationDate>2026-07-10</creationDate>
+    <copyright>(C) 2026 Probo CI</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>
+        Joomla port of the Probo single-file PHP demo: renders the environment
+        variables a Probo CI build injects into the container as two tables —
+        the documented build-variable catalog and the dynamically discovered
+        secrets/custom variables.
+    </description>
+    <namespace path="src">Probo\Component\Proboenvironment</namespace>
+    <files folder="site">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    <media destination="com_proboenvironment" folder="media">
+        <folder>css</folder>
+    </media>
+    <administration>
+        <files folder="admin">
+            <folder>services</folder>
+        </files>
+    </administration>
+</extension>

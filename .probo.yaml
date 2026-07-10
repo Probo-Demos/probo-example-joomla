@@ -1,0 +1,20 @@
+type: lamp
+php: 8.4
+database: mariadb:11.4
+
+# The sample database can be obtained at:
+# https://probosupportfiles.blob.core.windows.net/utils/joomla.sql.gz
+assets:
+  - joomla.sql.gz
+
+steps:
+  - name: Setup Joomla
+    plugin: Joomla
+    drupalVersion: 11
+    database: joomla.sql.gz
+    databaseGzipped: true
+    composer: true
+    clearCaches: false
+    databaseUpdates: false
+    subDirectory: docroot
+
