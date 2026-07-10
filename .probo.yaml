@@ -10,11 +10,8 @@ assets:
 steps:
   - name: Setup Joomla
     plugin: Joomla
-    drupalVersion: 11
     database: joomla.sql.gz
     databaseGzipped: true
-    composer: true
     clearCaches: false
-    databaseUpdates: false
     subDirectory: docroot
 
