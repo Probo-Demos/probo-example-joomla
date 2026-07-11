@@ -15,3 +15,7 @@ steps:
     clearCaches: false
     subDirectory: docroot
 
+  - name: Set Joomla Cache File Permissions
+    plugin: Script
+    script:
+      - chmod -R 777 /var/www/html/administrator
