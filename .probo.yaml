@@ -12,11 +12,10 @@ steps:
     plugin: Joomla
     database: joomla.sql.gz
     databaseGzipped: true
-    clearCaches: false
+    clearCaches: true
     subDirectory: docroot
     databasePrefix: fjoms_
     dbType: mysql
-    clearCaches: true
 
   - name: Set Joomla Cache File Permissions
     plugin: Script
