@@ -14,8 +14,12 @@ steps:
     databaseGzipped: true
     clearCaches: false
     subDirectory: docroot
+    databasePrefix: fjoms_
+    dbType: mysql
+    clearCaches: true
 
   - name: Set Joomla Cache File Permissions
     plugin: Script
     script:
       - chmod -R 777 /var/www/html/administrator
+      - chmod -R 777 /var/www/html/tmp
